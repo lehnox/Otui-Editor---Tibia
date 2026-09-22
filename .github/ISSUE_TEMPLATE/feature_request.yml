@@ -1,0 +1,43 @@
+name: Feature request
+description: Propose an improvement to the OTUI authoring workflow.
+title: "[Feature]: "
+labels:
+  - enhancement
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem to solve
+      description: Explain the workflow limitation or recurring problem behind the request.
+    validations:
+      required: true
+
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed behavior
+      description: Describe how the feature should work from the user's perspective.
+    validations:
+      required: true
+
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives considered
+      description: Describe current workarounds or other approaches you considered.
+
+  - type: input
+    id: compatibility
+    attributes:
+      label: OTClient distribution
+      description: Name the distribution or format variation that needs this feature, when applicable.
+
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Submission checks
+      options:
+        - label: I searched existing issues and pull requests for this feature.
+          required: true
+        - label: This request describes a real OTUI editing workflow.
+          required: true
