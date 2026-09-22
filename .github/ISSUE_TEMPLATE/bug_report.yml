@@ -1,0 +1,72 @@
+name: Bug report
+description: Report a reproducible problem with parsing, rendering, editing, or saving.
+title: "[Bug]: "
+labels:
+  - bug
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for helping improve OTUI Editor. Do not attach private server assets, credentials, or access tokens.
+
+  - type: textarea
+    id: summary
+    attributes:
+      label: Problem
+      description: Describe what went wrong and where it happened.
+      placeholder: The editor loads the widget, but...
+    validations:
+      required: true
+
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Reproduction steps
+      description: Provide the smallest sequence that reproduces the problem.
+      placeholder: |
+        1. Open a module containing...
+        2. Select...
+        3. Change...
+        4. Save...
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behavior
+      description: What should have happened instead?
+    validations:
+      required: true
+
+  - type: textarea
+    id: sample
+    attributes:
+      label: Minimal OTUI/OTMD sample
+      description: Paste a sanitized minimal example when the problem is format-specific.
+      render: text
+
+  - type: input
+    id: environment
+    attributes:
+      label: Environment
+      description: Include OS, Python version, and OTClient distribution/version.
+      placeholder: Windows 11, Python 3.12, OTClient...
+    validations:
+      required: true
+
+  - type: textarea
+    id: logs
+    attributes:
+      label: Logs or screenshots
+      description: Add sanitized logs, screenshots, or other context that helps explain the failure.
+
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Submission checks
+      options:
+        - label: I searched existing issues for the same problem.
+          required: true
+        - label: I removed private assets, credentials, and sensitive information.
+          required: true

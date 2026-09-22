@@ -6,6 +6,7 @@
 
 [![Python](https://img.shields.io/badge/Python-3.10%2B-3776AB?style=flat-square&logo=python&logoColor=white)](https://www.python.org/)
 [![PySide6](https://img.shields.io/badge/GUI-PySide6%20%2F%20Qt-41CD52?style=flat-square&logo=qt&logoColor=white)](https://doc.qt.io/qtforpython-6/)
+[![Quality checks](https://github.com/lehnox/Otui-Editor---Tibia/actions/workflows/quality.yml/badge.svg)](https://github.com/lehnox/Otui-Editor---Tibia/actions/workflows/quality.yml)
 [![Stars](https://img.shields.io/github/stars/lehnox/Otui-Editor---Tibia?style=flat-square&logo=github&label=Stars)](https://github.com/lehnox/Otui-Editor---Tibia/stargazers)
 [![Forks](https://img.shields.io/github/forks/lehnox/Otui-Editor---Tibia?style=flat-square&logo=github&label=Forks)](https://github.com/lehnox/Otui-Editor---Tibia/forks)
 
@@ -83,7 +84,7 @@ source .venv/bin/activate
 Install the GUI dependency and start the editor:
 
 ```bash
-python -m pip install PySide6
+python -m pip install -r requirements.txt
 python Otui.py
 ```
 
@@ -154,7 +155,9 @@ Areas planned for continued improvement include:
 
 ## Contributing
 
-Bug reports, compatibility notes, focused fixes, and improvements to format support are welcome. When reporting a parsing or rendering problem, include a minimal OTUI example, the expected result, the observed result, and the OTClient distribution you are using.
+Bug reports, compatibility notes, focused fixes, and improvements to format support are welcome. Read [CONTRIBUTING.md](CONTRIBUTING.md) for the local setup, validation commands, and pull-request expectations.
+
+When reporting a parsing or rendering problem, include a minimal OTUI example, the expected result, the observed result, and the OTClient distribution you are using.
 
 Please avoid sharing private server assets or credentials in issues, screenshots, or sample projects.
 
